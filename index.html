@@ -13,11 +13,12 @@
 </head>
 <body>
   <div id="app">
-
-    <ul>
+    <p v-if="mailList.length < 10">LOADING...</p>
+    <ul v-else>
       <li v-for="mail in mailList">{{mail}}</li>
-
     </ul>
+
+    
     
   </div>
 
